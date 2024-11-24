@@ -107,13 +107,13 @@ width: 50%;
 .anime-grid .grid-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #2b0808, #b00808);
+    background: linear-gradient(135deg, #2b0808, #830505);
     box-sizing: border-box;
 }
 
 .anime-grid .grid-card h3 {
     font-size: 1.8rem;
-    color: #ffffff;
+    color: #dc0e0e;
     margin-bottom: 1rem;
     box-sizing: border-box;
 }
@@ -148,7 +148,7 @@ footer{
 }
 
   
-/* acerca del anime*/
+/* Acerca del anime*/
 
 *{
     margin: 0;
@@ -178,9 +178,9 @@ footer{
     margin-top: 3rem;
 }
 
-.texto-acerca h2 {
+h2 {
     font-size: 2.5rem;
-    color: #b00808;
+    color: #dc0e0e;
     margin-bottom: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -198,7 +198,8 @@ footer{
     font-weight: bold;
 }
 
-/* personajes */
+/* Personajes */
+
 .personajes-container {
     display: flex;
     flex-wrap: wrap;
@@ -223,7 +224,9 @@ footer{
 
 .personaje-card:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #2b0808, #830505);
+    box-sizing: border-box;
 }
 
 .personaje-card img {
@@ -236,33 +239,33 @@ footer{
 .personaje-card h3 {
     font-size: 1.8rem;
     margin: 1rem 0 0.5rem;
-    color: #b00808;
+    color: #dc0e0e;
 }
 
 .personaje-card p {
     font-size: 1rem;
     padding: 0 1rem 1rem;
-    color: #ffffff;
 }
 
+/* Responsividad */
 
-/* responsividad */
-
-/* index */
+/* Index */
 @media (max-width: 768px) {
-    .anime-grid .grid-card {
+    .anime-grid .grid-card, 
+    .personaje-card{
         flex: 1 1 calc(45% - 1rem); 
     }
 }
 
 @media (max-width: 576px) {
-    .anime-grid .grid-card {
+    .anime-grid .grid-card,
+    .personaje-card {
         flex: 1 1 100%; 
         margin: 0.5rem 0;
     }
 }
 
-/* acerca del anime */
+/* Acerca del anime */
 @media screen and (min-width: 1024px) {
     .grid-2 {
         grid-template-columns: repeat(3, 1fr);
@@ -272,7 +275,7 @@ footer{
 }
 
 
-/* estilos de tablet */
+/* Estilos de tablet */
 
 @media screen and (max-width:600px){
     header{
@@ -292,7 +295,7 @@ footer{
     }
 }
 
-/* estilos desktop */
+/* Estilos desktop */
 
 @media screen and (min-width:1024px){
     .grid-2 .img-dos, .img-cinco{
@@ -324,6 +327,13 @@ footer{
         flex: 1 1 calc(45% - 1rem); 
     }
 }
+
+@media (max-width: 900px) {
+    .personaje-card {
+        flex: 1 1 calc(45% - 1rem); 
+    }
+}
+
 
 @media (max-width: 576px) {
     .personaje-card {
